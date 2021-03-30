@@ -15,8 +15,4 @@
         <server name="APP_KEY" value="AckfSECXIvnK5r28GVIWUAxmbBSjTsmF"/>
         <server name="APP_DEBUG" value="true"/>
     </php>
-    <logging>
-        <log type="coverage-html" target="./reports"
-        lowUpperBound="50" highLowerBound="80" />
-    </logging>
 </phpunit>

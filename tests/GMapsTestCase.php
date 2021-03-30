@@ -8,7 +8,7 @@ class GMapsTestCase extends BaseTestCase {
 	public $baseUrl = 'http://localhost';
 
     protected function getPackageProviders($app) {
-	    return ['Fifthgate\GDPR\GDPRServiceProvider'];
+	    return ['Fifthgate\GMaps\GMapsServiceProvider'];
 	}
 
 	/**
