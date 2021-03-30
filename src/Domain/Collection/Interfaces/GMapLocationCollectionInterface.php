@@ -6,4 +6,6 @@ use Fifthgate\Objectivity\Core\Domain\Collection\Interfaces\DomainEntityCollecti
 
 interface GMapLocationCollectionInterface extends DomainEntityCollectionInterface {
 	public function toJson() : string;
+
+	public function toArray() : array;
 }

@@ -9,10 +9,14 @@ class GMapLocationCollection extends AbstractDomainEntityCollection implements G
 
 	public function toJson() : string {
 
-		$jsonArray = [];
+		return json_encode($this->toArray());
+	}
+
+	public function toArray() : array {
+		$array = [];
 		foreach ($this->collection as $delta => $item) {
-			$jsonArray[] = $item->toArray();
+			$array[] = $item->toArray();	
 		}
-		return json_encode($jsonArray);
+		return $array;
 	}
 }
