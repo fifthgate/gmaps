@@ -2,7 +2,9 @@
 
 namespace Fifthgate\GMaps\Domain\Interfaces;
 
-interface GMapLocationInterface {
+use Fifthgate\Objectivity\Core\Domain\Interfaces\DomainEntityInterface;
+
+interface GMapLocationInterface extends DomainEntityInterface {
 	
 	public static function make(
 		$id,
