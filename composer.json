@@ -33,12 +33,5 @@
             "type": "vcs",
             "url": "git@github.com:fifthgate/objectivity-core.git"
         }
-    ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Fifthgate\\GMaps\\GMapsServiceProvider"
-            ]
-        }
-    }
+    ]
 }
