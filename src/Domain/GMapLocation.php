@@ -69,4 +69,14 @@ class GMapLocation implements GMapLocationInterface {
 		return $this->name;
 	}
 
+	public function toJson() : string {
+		return json_encode([
+			'id' => $this->getID(),
+			'name' => $this->getName(),
+			'address' => $this->getAddress(),
+			'type' => $this->getType(),
+			'lat' => $this->getLat(),
+			'long' => $this->getLong()
+		]);
+	}
 }
