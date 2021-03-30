@@ -28,4 +28,6 @@ interface GMapLocationInterface extends DomainEntityInterface {
 	public function getLong() : float;
 
 	public function toJson() : string;
+
+	public function toArray() : array;
 }

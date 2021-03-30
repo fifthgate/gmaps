@@ -70,13 +70,17 @@ class GMapLocation implements GMapLocationInterface {
 	}
 
 	public function toJson() : string {
-		return json_encode([
+		return json_encode($this->toArray());
+	}
+
+	public function toArray() : array {
+		return [
 			'id' => $this->getID(),
 			'name' => $this->getName(),
 			'address' => $this->getAddress(),
 			'type' => $this->getType(),
 			'lat' => $this->getLat(),
 			'long' => $this->getLong()
-		]);
+		];
 	}
 }
