@@ -30,4 +30,8 @@ interface GMapLocationInterface extends DomainEntityInterface {
 	public function toJson() : string;
 
 	public function toArray() : array;
+
+	public function setLocationMetadata(string $key, string $value);
+
+	public function getLocationMetadata(string $key) : ? string;
 }

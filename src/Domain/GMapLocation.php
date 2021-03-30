@@ -18,6 +18,8 @@ class GMapLocation implements GMapLocationInterface {
 
 	protected float $long;
 
+	protected array $locationMetadata;
+
 	public static function make(
 		$id,
 		string $name,
@@ -43,6 +45,7 @@ class GMapLocation implements GMapLocationInterface {
 		$this->type = $type;
 		$this->lat = $lat;
 		$this->long = $long;
+		$this->locationMetadata = [];
 	}
 
 	public function getID() {
@@ -74,13 +77,28 @@ class GMapLocation implements GMapLocationInterface {
 	}
 
 	public function toArray() : array {
-		return [
+		$array = [
 			'id' => $this->getID(),
 			'name' => $this->getName(),
 			'address' => $this->getAddress(),
 			'type' => $this->getType(),
 			'lat' => $this->getLat(),
-			'long' => $this->getLong()
+			'long' => $this->getLong(),
 		];
+		if ($this->locationMetadata && !empty($this->locationMetadata)) {
+			$array['location_metadata'] = $this->locationMetadata;
+		}
+		return $array;
+	}
+
+	public function setLocationMetadata(string $key, string $value)
+	{
+		$this->locationMetadata[$key] = $value;
+
+	}
+
+	public function getLocationMetadata(string $key) : ? string {
+
+		return $this->locationMetadata[$key] ?? null;
 	}
 }

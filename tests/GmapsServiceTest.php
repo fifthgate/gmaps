@@ -104,5 +104,48 @@ class GmapsServiceTest extends TestCase {
 		
 		$this->assertEquals($collectionJsonString, $collection->toJson());
 	}
+
+	public function testMetadata() {
+		$id = 1;
+		$name = "Test Location";
+		$address = "Address, Street, Postcode";
+		$type = 'church';
+		$lat = 52.18623534540682;
+		$long = -4.3811734466237064;
+
+		$location = GMapLocation::make(
+			$id,
+			$name,
+			$address,
+			$type,
+			$lat,
+			$long
+		);
+
+		$location->setLocationMetadata("testKey", "testValue");
+		$this->assertEquals("testValue", $location->getLocationMetadata("testKey"));
+	}
+
+	public function testMetadataToArray() {
+		$id = 1;
+		$name = "Test Location";
+		$address = "Address, Street, Postcode";
+		$type = 'church';
+		$lat = 52.18623534540682;
+		$long = -4.3811734466237064;
+
+		$location = GMapLocation::make(
+			$id,
+			$name,
+			$address,
+			$type,
+			$lat,
+			$long
+		);
+
+		$location->setLocationMetadata("testKey", "testValue");
+		$locationArray = $location->toArray();
+		$this->assertEquals($locationArray["location_metadata"]["testKey"], "testValue");
+	}
 }
 
