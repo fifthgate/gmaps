@@ -3,8 +3,9 @@
 namespace Fifthgate\GMaps\Domain;
 
 use Fifthgate\GMaps\Domain\Interfaces\GMapLocationInterface;
+use Fifthgate\Objectivity\Core\Domain\AbstractDomainEntity;
 
-class GMapLocation implements GMapLocationInterface {
+class GMapLocation extends AbstractDomainEntity implements GMapLocationInterface {
 	
 	protected $id;
 
