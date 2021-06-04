@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b08982f3e35c03c1e36b959fc2ad3822",
+    "content-hash": "2d1d46adb6773abf4cfc1fa4ca17c852",
     "packages": [
         {
             "name": "fifthgate/objectivity-core",
-            "version": "v0.1.6",
+            "version": "v0.2.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:fifthgate/objectivity-core.git",
-                "reference": "42e0b104ccb080a43c67ec1a874921949118f06b"
+                "reference": "3ce92a53b96bdfdced2b38151725844b233779f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fifthgate/objectivity-core/zipball/42e0b104ccb080a43c67ec1a874921949118f06b",
-                "reference": "42e0b104ccb080a43c67ec1a874921949118f06b",
+                "url": "https://api.github.com/repos/fifthgate/objectivity-core/zipball/3ce92a53b96bdfdced2b38151725844b233779f6",
+                "reference": "3ce92a53b96bdfdced2b38151725844b233779f6",
                 "shasum": ""
             },
             "require": {
@@ -52,10 +52,10 @@
             "description": "A simple library providing domain-driven design objects for Laravel to use in other projects.",
             "homepage": "https://github.com/fifthgate/objectivity-core",
             "support": {
-                "source": "https://github.com/fifthgate/objectivity-core/tree/v0.1.6",
+                "source": "https://github.com/fifthgate/objectivity-core/tree/v0.2.4",
                 "issues": "https://github.com/fifthgate/objectivity-core/issues"
             },
-            "time": "2021-04-13T18:59:21+00:00"
+            "time": "2021-05-31T14:56:54+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -4198,12 +4198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/type.git",
-                "reference": "b4091ba0a62ad34e4f3fe46cb429a39e870321f5"
+                "reference": "0d1c587401514d17e8f9258a27e23527cb1b06c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/b4091ba0a62ad34e4f3fe46cb429a39e870321f5",
-                "reference": "b4091ba0a62ad34e4f3fe46cb429a39e870321f5",
+                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/0d1c587401514d17e8f9258a27e23527cb1b06c1",
+                "reference": "0d1c587401514d17e8f9258a27e23527cb1b06c1",
                 "shasum": ""
             },
             "require": {
@@ -4246,7 +4246,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-04T12:57:09+00:00"
+            "time": "2021-06-04T13:02:07+00:00"
         },
         {
             "name": "sebastian/version",
