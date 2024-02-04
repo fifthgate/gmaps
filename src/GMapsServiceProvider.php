@@ -1,11 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fifthgate\GMaps;
 
 use Illuminate\Support\ServiceProvider;
 
-class GMapsServiceProvider extends ServiceProvider {
-	/**
+class GMapsServiceProvider extends ServiceProvider
+{
+    /**
     * Publishes configuration file.
     *
     * @return  void
@@ -14,7 +17,7 @@ class GMapsServiceProvider extends ServiceProvider {
     {
     }
 
-     /**
+    /**
     * Make config publishment optional by merging the config from the package.
     *
     * @return  void

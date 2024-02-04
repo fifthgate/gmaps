@@ -21,7 +21,7 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "fifthgate/objectivity-core": "^1.0.0"
+        "fifthgate/objectivity-core": "^2.0.0"
     },
     "require-dev": {
         "orchestra/testbench": "6.x-dev"

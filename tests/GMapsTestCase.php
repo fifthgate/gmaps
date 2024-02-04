@@ -21,7 +21,7 @@ class GMapsTestCase extends BaseTestCase
      */
     protected function getEnvironmentSetUp($app)
     {
-        
+
 
         $app['config']->set('key', 'base64:j84cxCjod/fon4Ks52qdMKiJXOrO5OSDBpXjVUMz61s=');
         // Setup default database to use sqlite :memory:

@@ -1,22 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fifthgate\GMaps\Domain\Collection;
 
 use Fifthgate\GMaps\Domain\Collection\Interfaces\GMapLocationCollectionInterface;
 use Fifthgate\Objectivity\Core\Domain\Collection\AbstractDomainEntityCollection;
 
-class GMapLocationCollection extends AbstractDomainEntityCollection implements GMapLocationCollectionInterface {
+class GMapLocationCollection extends AbstractDomainEntityCollection implements GMapLocationCollectionInterface
+{
+    public function toJson(): string
+    {
 
-	public function toJson() : string {
+        return json_encode($this->toArray());
+    }
 
-		return json_encode($this->toArray());
-	}
-
-	public function toArray() : array {
-		$array = [];
-		foreach ($this->collection as $delta => $item) {
-			$array[] = $item->toArray();	
-		}
-		return $array;
-	}
+    public function toArray(): array
+    {
+        $array = [];
+        foreach ($this->collection as $delta => $item) {
+            $array[] = $item->toArray();
+        }
+        return $array;
+    }
 }
